@@ -20,6 +20,7 @@ Para visualizar y utilizar este proyecto no necesitas instalar dependencias loca
 Opción 1: Acceso Directo (Recomendado)
 
 1. Haz clic en el enlace de despliegue generado por GitHub Pages:
+   https://herrerasolisp-hub.github.io/gestion_mantenimiento_equipos/
 
 2. La aplicación cargará automáticamente en tu navegador con tres equipos registrados por defecto como ejemplo inicial.
 
