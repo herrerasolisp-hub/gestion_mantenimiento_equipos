@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento de Equipos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Control de Mantenimiento de Equipos</h1>
+
+        <div id="mensaje" class="mensaje oculto"></div>
+
+        <form id="formulario-equipo" class="card">
+            <h2>Datos del Equipo</h2>
+
+            <div class="form-group">
+                <label for="select-equipos">Seleccionar Equipo:</label>
+                <select id="select-equipos">
+                    <option value="">--- Selecciona un equipo ---</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre del Equipo:</label>
+                <input type="text" id="nombre" required placeholder="Ej. Impresora Lazer Pro">
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha de última revisión:</label>
+                <input type="date" id="fecha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción del mantenimiento:</label>
+                <textarea id="descripcion" rows="4" required placeholder="Describe las tareas realizadas..."></textarea>
+            </div>
+
+            <div class="acciones">
+                <button type="button" id="btn-registrar" class="btn btn-registrar">Registrar equipo</button>
+                <button type="button" id="btn-actualizar" class="btn btn-actualizar">Actualizar equipo</button>
+                <button type="button" id="btn-eliminar" class="btn btn-eliminar">Eliminar equipo</button>
+            </div>
+        </form>
+
+        <section class="card">
+            <h2>Equipos Registrados</h2>
+            <div id="lista-equipos" class="lista-equipos">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
